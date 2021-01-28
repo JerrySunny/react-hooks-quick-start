@@ -1,5 +1,6 @@
 import './App.css';
 import ClassCounter from './components/ClassCounter';
+import DataFetchUseReducer from './components/DataFetchUseReducer';
 import DataFetchUseState from './components/DataFetchUseState';
 import HookCounter from './components/HookCounter';
 import HooksMouseMove from './components/HooksMouseMove';
@@ -14,7 +15,8 @@ function App() {
       {/* <HooksMouseMove /> */}
       {/* <IntervalClassCounter />
       <IntervalHookCounter /> */}
-      <DataFetchUseState></DataFetchUseState>
+      {/* <DataFetchUseState></DataFetchUseState> */}
+      <DataFetchUseReducer />
     </div>
   );
 }

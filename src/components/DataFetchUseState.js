@@ -23,9 +23,8 @@ function DataFetchUseState() {
     }, [])
     return (
         <div>
-            {isLoading && <div>loading......</div>}
-            {data.title}
-            {(!isLoading) && <div>{error}</div>}
+            {isLoading ? 'loading' : data.title}
+            {error ? error : null}
         </div>
     )
 

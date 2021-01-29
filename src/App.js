@@ -1,11 +1,12 @@
 import './App.css';
-import ClassCounter from './components/ClassCounter';
-import DataFetchUseReducer from './components/DataFetchUseReducer';
-import DataFetchUseState from './components/DataFetchUseState';
-import HookCounter from './components/HookCounter';
-import HooksMouseMove from './components/HooksMouseMove';
-import IntervalClassCounter from './components/IntervalClassCounter';
-import IntervalHookCounter from './components/IntervalHookCounter';
+// import ClassCounter from './components/ClassCounter';
+// import DataFetchUseReducer from './components/DataFetchUseReducer';
+// import DataFetchUseState from './components/DataFetchUseState';
+// import HookCounter from './components/HookCounter';
+// import HooksMouseMove from './components/HooksMouseMove';
+// import IntervalClassCounter from './components/IntervalClassCounter';
+// import IntervalHookCounter from './components/IntervalHookCounter';
+import ParentComponent from './components/performance/callbackhook/ParentComponent';
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       {/* <IntervalClassCounter />
       <IntervalHookCounter /> */}
       {/* <DataFetchUseState></DataFetchUseState> */}
-      <DataFetchUseReducer />
+      {/* <DataFetchUseReducer /> */}
+      <ParentComponent></ParentComponent>
     </div>
   );
 }

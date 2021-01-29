@@ -1,5 +1,6 @@
 import './App.css';
-import Counter from './components/performance/memohook/Counter';
+import FocusInput from './components/FocusInput';
+// import Counter from './components/performance/memohook/Counter';
 // import ClassCounter from './components/ClassCounter';
 // import DataFetchUseReducer from './components/DataFetchUseReducer';
 // import DataFetchUseState from './components/DataFetchUseState';
@@ -20,7 +21,8 @@ function App() {
       {/* <DataFetchUseState></DataFetchUseState> */}
       {/* <DataFetchUseReducer /> */}
       {/* <ParentComponent></ParentComponent> */}
-      <Counter></Counter>
+      {/* <Counter></Counter> */}
+      <FocusInput></FocusInput>
     </div>
   );
 }

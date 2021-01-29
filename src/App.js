@@ -1,4 +1,5 @@
 import './App.css';
+import Counter from './components/performance/memohook/Counter';
 // import ClassCounter from './components/ClassCounter';
 // import DataFetchUseReducer from './components/DataFetchUseReducer';
 // import DataFetchUseState from './components/DataFetchUseState';
@@ -6,7 +7,7 @@ import './App.css';
 // import HooksMouseMove from './components/HooksMouseMove';
 // import IntervalClassCounter from './components/IntervalClassCounter';
 // import IntervalHookCounter from './components/IntervalHookCounter';
-import ParentComponent from './components/performance/callbackhook/ParentComponent';
+// import ParentComponent from './components/performance/callbackhook/ParentComponent';
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
       <IntervalHookCounter /> */}
       {/* <DataFetchUseState></DataFetchUseState> */}
       {/* <DataFetchUseReducer /> */}
-      <ParentComponent></ParentComponent>
+      {/* <ParentComponent></ParentComponent> */}
+      <Counter></Counter>
     </div>
   );
 }

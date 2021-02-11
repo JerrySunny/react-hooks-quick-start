@@ -1,5 +1,8 @@
 import './App.css';
-import FocusInput from './components/FocusInput';
+import { Provider } from "react-redux";
+import store from './redux/store';
+import UserContainer from './containers/UserContainer';
+// import FocusInput from './components/FocusInput';
 // import Counter from './components/performance/memohook/Counter';
 // import ClassCounter from './components/ClassCounter';
 // import DataFetchUseReducer from './components/DataFetchUseReducer';
@@ -12,18 +15,21 @@ import FocusInput from './components/FocusInput';
 
 function App() {
   return (
-    <div className="App">
-      {/* <ClassCounter></ClassCounter>
+    <Provider store={store}>
+      <div className="App">
+        {/* <ClassCounter></ClassCounter>
       <HookCounter /> */}
-      {/* <HooksMouseMove /> */}
-      {/* <IntervalClassCounter />
+        {/* <HooksMouseMove /> */}
+        {/* <IntervalClassCounter />
       <IntervalHookCounter /> */}
-      {/* <DataFetchUseState></DataFetchUseState> */}
-      {/* <DataFetchUseReducer /> */}
-      {/* <ParentComponent></ParentComponent> */}
-      {/* <Counter></Counter> */}
-      <FocusInput></FocusInput>
-    </div>
+        {/* <DataFetchUseState></DataFetchUseState> */}
+        {/* <DataFetchUseReducer /> */}
+        {/* <ParentComponent></ParentComponent> */}
+        {/* <Counter></Counter> */}
+        {/* <FocusInput></FocusInput> */}
+        <UserContainer></UserContainer>
+      </div>
+    </Provider>
   );
 }
 

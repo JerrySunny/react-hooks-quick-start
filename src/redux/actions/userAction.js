@@ -24,7 +24,7 @@ export const getUserError = error => {
     }
 }
 
-export function getUsers() {
+export const getUsers = () => {
     return async dispatch => {
         dispatch(getUserRequest());
         try {

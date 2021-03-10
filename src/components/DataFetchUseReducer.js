@@ -13,7 +13,7 @@ function DataFetchUseReducer() {
             case "FETCH_SUCCESS":
                 return {
                     isLoading: false,
-                    data: action.payload,
+                    data: action.data,
                     error: ''
                 };
                 break;
@@ -34,7 +34,7 @@ function DataFetchUseReducer() {
         const getData = async () => {
             try {
                 const user = await axios.get('https://jsonplaceholder.typicode.com/posts/1');
-                dispatch({ type: 'FETCH_SUCCESS', payload: user.data })
+                dispatch({ type: 'FETCH_SUCCESS', data: user.data })
             } catch (error) {
                 dispatch({ type: 'FETCH_ERROR' })
             }

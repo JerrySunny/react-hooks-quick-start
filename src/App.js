@@ -2,7 +2,8 @@ import './App.css';
 import { Provider } from "react-redux";
 import store from './redux/store';
 import UserContainer from './containers/UserContainer';
-// import FocusInput from './components/FocusInput';
+import FocusInput from './components/FocusInput';
+import Trials from './components/Trials';
 // import Counter from './components/performance/memohook/Counter';
 // import ClassCounter from './components/ClassCounter';
 // import DataFetchUseReducer from './components/DataFetchUseReducer';
@@ -26,8 +27,9 @@ function App() {
         {/* <DataFetchUseReducer /> */}
         {/* <ParentComponent></ParentComponent> */}
         {/* <Counter></Counter> */}
-        {/* <FocusInput></FocusInput> */}
-        <UserContainer></UserContainer>
+        {/* <FocusInput></FocusInput>
+        <UserContainer></UserContainer> */}
+        <Trials></Trials>
       </div>
     </Provider>
   );

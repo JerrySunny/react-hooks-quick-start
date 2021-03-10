@@ -1,13 +1,18 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 function FocusInput() {
 
     const inputRef = useRef();
+
+    const [name, setName] = useState('');
     useEffect(() => {
         inputRef.current.focus();
-    },[]);
+    }, []);
     return (
-        <input type="text" ref={inputRef}></input>
+        <div>
+            <input type="text" ref={inputRef} onChange={(e) => setName(e.target.value)}></input>
+            <h1>{name}</h1>
+        </div>
     )
 }
 

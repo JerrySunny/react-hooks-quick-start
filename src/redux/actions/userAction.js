@@ -13,14 +13,14 @@ export const getUserRequest = () => {
 export const getUserSuccess = users => {
     return {
         type: FETCH_SUCCESS,
-        payload: users
+        data: users
     }
 }
 
 export const getUserError = error => {
     return {
         type: FETCH_ERROR,
-        payload: error
+        data: error
     }
 }
 

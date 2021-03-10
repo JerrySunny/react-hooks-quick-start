@@ -10,14 +10,14 @@ const userReducer = (state = initialState, action) => {
         case FETCH_REQUEST:
             return {
                 isLoading: false,
-                users: action.payload,
+                users: action.data,
                 error: ''
             };
             break;
         case FETCH_SUCCESS:
             return {
                 isLoading: false,
-                users: action.payload,
+                users: action.data,
                 error: ''
             };
             break;
@@ -25,7 +25,7 @@ const userReducer = (state = initialState, action) => {
             return {
                 isLoading: false,
                 users: {},
-                error: action.payload
+                error: action.data
             };
             break;
         default:

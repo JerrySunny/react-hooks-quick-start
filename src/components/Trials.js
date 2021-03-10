@@ -1,7 +1,9 @@
-import React, { useReducer, useEffect } from "react";
+import React, { useReducer, useEffect, useContext } from "react";
+import {UserContext} from '../App'
 import axios from 'axios';
 
 function Trials() {
+    const user = useContext(UserContext);
     const initialState = {
         loading: true,
         error: '',
@@ -46,6 +48,7 @@ function Trials() {
     }, [])
     return (
         <div>
+            user {user.name +' - '+ user.role}
             {state.loading ? 'loading....' : ''}
             {state.items && <table>
                 <tr>
